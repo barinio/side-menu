@@ -9,7 +9,6 @@ for (let index = 0; index < pppLinks.length; index++) {
 	link.addEventListener('click', function (e) {
 		const popName = link.getAttribute('href').replace("#", '');
 		const curentPop = document.getElementById(popName);
-		console.log(curentPop);
 		popOpen(curentPop);
 		document.body.classList.add('filter');
 		e.preventDefault();
@@ -18,13 +17,14 @@ for (let index = 0; index < pppLinks.length; index++) {
 
 function popOpen(curentPop) {
 	const popActive = document.querySelector('.ppp__content.open');
-	console.log(popActive);
-	if (popActive) {
+	if (popActive && popActive !== curentPop) {
 		popClose(popActive)
 	}
 	curentPop.classList.add('open');
 }
 
 function popClose(popActive) {
-	popActive.classList.remove('open');
+	if (popActive) {
+		popActive.classList.remove('open');
+	}
 }
