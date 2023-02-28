@@ -287,7 +287,7 @@ h2 {
 @media (max-width: 500px) {
 	.bg-menu {
 		width: 120%;
-		margin: -12px;
+		margin: 10px 10px;
 		top: 5px;
 	}
 	.nav__list {
@@ -301,7 +301,7 @@ h2 {
 		height: 30%;
 	}
 	.ppp__content {
-		left: 26px;
+		left: 50px;
 	}
 	.text-content {
 		font-size: 20px;
