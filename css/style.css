@@ -81,7 +81,7 @@ h6 {
 	display: none;
 }
 /* addition */
-body {
+.bg {
 	background: url("/img/body.jpg") 0 0 / cover no-repeat;
 }
 .filter {
