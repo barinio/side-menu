@@ -255,7 +255,7 @@ h2 {
 		width: 100%;
 	}
 	.nuv__list-item {
-		margin: 3px;
+		margin: 10px;
 	}
 	.uchiha:hover {
 		padding: 7px;
@@ -275,7 +275,6 @@ h2 {
 	.nav__list {
 		display: grid;
 		grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-		gap: 15px;
 	}
 	.bg-menu {
 		height: 145px;
@@ -285,9 +284,30 @@ h2 {
 		height: 100%;
 	}
 }
-@media (max-width: 680px) {
+@media (max-width: 500px) {
 	.bg-menu {
-		width: 100%;
-		margin: 0px;
+		width: 120%;
+		margin: -12px;
+		top: 5px;
+	}
+	.nav__list {
+		grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+		gap: 20px;
+	}
+	.ppp-link {
+		font-size: 20px;
+	}
+	img {
+		height: 30%;
+	}
+	.ppp__content {
+		left: 26px;
+	}
+	.text-content {
+		font-size: 20px;
+		width: 105%;
+	}
+	.nuv__list-item {
+		margin: 3px;
 	}
 }
