@@ -82,7 +82,7 @@ h6 {
 }
 /* addition */
 body {
-	background: url("./img/body.jpg") 0 0 / cover no-repeat;
+	background: url("/img/body.jpg") 0 0 / cover no-repeat;
 }
 .filter {
 	backdrop-filter: blur(7px);
