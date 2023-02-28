@@ -82,7 +82,9 @@ h6 {
 }
 /* addition */
 .bg {
-	background: url("/img/body.jpg") 0 0 / cover no-repeat;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .filter {
 	backdrop-filter: blur(7px);
@@ -205,9 +207,87 @@ h2 {
 	text-shadow: 1px 2px 10px white;
 }
 /* media */
-@media (max-width: 850px) {
+@media (max-width: 1175px) {
+	.ppp__content {
+		width: 70%;
+	}
+	.text-content {
+		font-size: 16px;
+		font-weight: 600;
+		width: 80%;
+	}
+	img {
+		height: 47%;
+	}
+}
+@media (max-width: 985px) {
+	.filter {
+		backdrop-filter: none;
+		box-shadow: none;
+	}
+	.ppp__content {
+		width: 100%;
+		height: 130%;
+		top: 110px;
+	}
+	.title {
+		margin-bottom: 10px;
+		font-size: 30px;
+		font-weight: 800;
+		width: 700px;
+		text-align: center;
+	}
 	.bg-menu {
-		position: static;
-		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: -5px;
+		height: 100px;
+		width: 98%;
+		margin: 10px 10px;
+	}
+	img {
+		height: 40%;
+	}
+	.nav__list {
+		display: flex;
+		width: 100%;
+	}
+	.nuv__list-item {
+		margin: 3px;
+	}
+	.uchiha:hover {
+		padding: 7px;
+	}
+	.usumaki:hover {
+		padding: 7px;
+	}
+	.another:hover {
+		padding: 7px;
+	}
+}
+@media (max-width: 830px) {
+	.bg-menu {
+		width: 97%;
+	}
+
+	.nav__list {
+		display: grid;
+		grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+		gap: 15px;
+	}
+	.bg-menu {
+		height: 145px;
+	}
+	.ppp__content {
+		top: 160px;
+		height: 100%;
+	}
+}
+@media (max-width: 680px) {
+	.bg-menu {
+		width: 100%;
+		margin: 0px;
 	}
 }
